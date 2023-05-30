@@ -21,12 +21,14 @@ const ContentText = styled.p`
     font-size: 14px;
 `;
 
-function CommeentList(props) {
+function CommentList(props) {
     const { comment } = props;
 
     return (
         <Wrapper>
-            <ContentText>(comment.content)</ContentText>
+            <ContentText>{comment.content}</ContentText>
         </Wrapper>
     );
 }
+
+export default CommentList;
